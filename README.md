@@ -1,6 +1,7 @@
 # LEGO ASSIGNMENT
 
-This project was created for LEGO interview where the requirements are
+This project was created for LEGO interview where the requirements are: 
+
 •	Sort out all the vendors and the materials that the vendor offers.  
 
 •	For each material, find the cheapest vendor and its deliver time. 
