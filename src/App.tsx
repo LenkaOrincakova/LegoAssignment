@@ -33,7 +33,6 @@ function App() {
         const numbers: string[] = ["100-200","200-300","300-400","400-"];
         const responseMaterials: Material[] = [];
         const sortedMaterials: Material[] = [];
-        var bestOption :string[] = [];
         const vendors: Vendor[] = data["Vendors"];
         const materialsFromJson: [] = data["Materials"];
 
