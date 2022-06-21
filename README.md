@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# LEGO ASSIGNMENT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created for LEGO interview where the requirements are: 
+
+•	Sort out all the vendors and the materials that the vendor offers.  
+
+•	For each material, find the cheapest vendor and its deliver time. 
+Note: different vendors offer their material in different currency and weight unit, so you need to take the currency, and weight conversion into consideration. 
+
+•	Find the best offer for the material Polymethyl Methacrylate (PMMA) and the melting point between 200C to 300C.  Note: you should also consider the deliver time and cost, and eco-friendly, etc. 
+
+•	[Open question] - Any issues with the data model, and how can we improve it? 
+- The data model is very clear and readable, referencing the vendors with their ID. The conversions in currency and units were needed to be made, although the logic is usually implemented in code. In my opinion, there could be another table with names of the materials which would be in relations to currecnt materials, since the names are too long and sometimes more difficult to use in if or switch statements. Each material with the name could have and ID which would represent it. 
+
+•	[Open question] - Any other filter options you might think that might be useful?  
+- Having more filters is always a good option, since the user/developer can see exactly what he is looking for. I would add a filter, which would focus on user's preferences, such as find the material which is ECO friendly, find the material that has the lowest days in delivering, find the material that is the cheapest. 
+- Another filter could be selecting the best option of each material and comparing the best ones together, to see the material's best option. 
+- Basic filters such as sorting according to the melting points, price or days for delivering or based on colour are always good to have. 
+
+•	This project has some functionalities that are displayed in the table and some of them are in console. The project has a workflow to show the work with CI/CD and could be deployed to a cloud service in the future. The design is simple, easy for user to manage. The whole project is coded in React Typescript.  
 
 ## Available Scripts
 
