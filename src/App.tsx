@@ -30,9 +30,7 @@ function App() {
     
 
         const names: string[] = [];
-        const numbers: string[] = ["100-200","200-300","300-400","400-"];
         const responseMaterials: Material[] = [];
-        const sortedMaterials: Material[] = [];
         const vendors: Vendor[] = data["Vendors"];
         const materialsFromJson: [] = data["Materials"];
 
@@ -51,7 +49,7 @@ function App() {
           newMaterial.vendor = vendors.find(
             (vendor) => vendor.ID === material["VendorID"]
           );
-
+            //Since the currency isn't the same, the conversions are needed
           if (material["Currency"] === "POUND") {
             newMaterial.Currency = "DKK";
             newMaterial.PricePerUnit = material["PricePerUnit"] * 8.56;
@@ -108,6 +106,7 @@ function App() {
     
     if(e.target.value === "2")
     {
+      //displaying the material PMMA and its features in console
       setMaterials(
       materials.filter(material=>
         {
@@ -127,6 +126,7 @@ function App() {
         )
         
     }
+    //not neccessary, just for debugging
     else if (e.target.value === "3") {
       setMaterials(
         materials.filter(material=>
@@ -146,6 +146,8 @@ function App() {
       setMaterials(
         materials.filter(material=>
           {
+                //not neccessary, just for debugging
+
             if(material.MeltingPoint! > 100 && material.MeltingPoint! < 200)
             {
               console.log(" NAME: " + material.Name + " MELTING POINT: value 1: " + material.MeltingPoint + "Deliver time: " + material.DeliveryTimeDays + "Price: " + material.PricePerUnit + " Eco Friendly: " + material.vendor?.ECOFriendly);
